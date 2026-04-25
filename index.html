@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Cybersecurity Awareness & Online Protection</title>
+    <meta name="description"
+        content="CyberShield is your comprehensive guide to staying safe online. Learn about phishing, malware, social engineering, and use our interactive tools to test your security.">
+    <meta name="keywords"
+        content="cybersecurity, phishing, online safety, password strength, data breach, security quiz">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <base target="_blank">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-halved"></i>
+                <span>CyberShield</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#threats">Threats</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-lock"></i>
+                <span>Stay Safe Online</span>
+            </div>
+            <h1>Protect Yourself in the <span class="gradient-text">Digital World</span></h1>
+            <p>Learn how to recognize cyber threats, secure your accounts, and keep your personal information safe from
+                hackers and scammers.</p>
+            <div class="hero-buttons">
+                <a href="#threats" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Threats
+                </a>
+                <a href="#tools" class="btn btn-secondary">
+                    <i class="fas fa-tools"></i>
+                    Security Tools
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="43">0</span><span>%</span>
+                    <p>of cyber attacks target small businesses</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="95">0</span><span>%</span>
+                    <p>of breaches caused by human error</p>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4.5">0</span><span>M+</span>
+                    <p>new malware samples daily</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="shield-animation">
+                <div class="shield-ring ring-1"></div>
+                <div class="shield-ring ring-2"></div>
+                <div class="shield-ring ring-3"></div>
+                <div class="shield-core">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threats Section -->
+    <section id="threats" class="threats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Know Your Enemy</span>
+                <h2>Common Cyber Threats</h2>
+                <p>Understanding these threats is the first step to protecting yourself</p>
+            </div>
+            <div class="threats-grid">
+                <!-- Phishing -->
+                <div class="threat-card" data-threat="phishing">
+                    <div class="threat-icon">
+                        <i class="fas fa-fish-fins"></i>
+                    </div>
+                    <h3>Phishing</h3>
+                    <p>Fraudulent attempts to steal sensitive information by disguising as trustworthy entities.</p>
+                    <div class="threat-example">
+                        <div class="example-header">
+                            <i class="fas fa-envelope"></i>
+                            <span>Real Example</span>
+                        </div>
+                        <div class="example-content">
+                            <p><strong>From:</strong> security@paypa1.com</p>
+                            <p><strong>Subject:</strong> Urgent: Account Suspended</p>
+                            <p class="example-text">"Click here immediately to verify your account or it will be deleted
+                                within 24 hours."</p>
+                            <div class="red-flags">
+                                <span class="flag"><i class="fas fa-times"></i> Misspelled domain</span>
+                                <span class="flag"><i class="fas fa-times"></i> Urgency tactic</span>
+                                <span class="flag"><i class="fas fa-times"></i> Generic greeting</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-content" id="learn-phishing">
+                        <div class="learn-more-inner">
+                            <h4><i class="fas fa-book-open"></i> How to Stay Safe</h4>
+                            <ul>
+                                <li><strong>Check the sender address carefully</strong> — Look for misspellings like
+                                    "paypa1" instead of "paypal"</li>
+                                <li><strong>Hover before clicking</strong> — Hover over links to see the actual URL
+                                    destination</li>
+                                <li><strong>Never share passwords via email</strong> — Legitimate companies never ask
+                                    for passwords</li>
+                                <li><strong>Enable email authentication</strong> — SPF, DKIM, and DMARC help filter fake
+                                    emails</li>
+                                <li><strong>Use anti-phishing browser extensions</strong> — Tools like Netcraft or
+                                    PhishTank</li>
+                            </ul>
+                            <div class="safety-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span><strong>Pro Tip:</strong> When in doubt, visit the website directly by typing the
+                                    URL instead of clicking links.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-learn-more" data-target="learn-phishing">
+                        <span class="btn-text">Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Malware -->
+                <div class="threat-card" data-threat="malware">
+                    <div class="threat-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Malware</h3>
+                    <p>Malicious software designed to damage, disrupt, or gain unauthorized access to systems.</p>
+                    <div class="threat-example">
+                        <div class="example-header">
+                            <i class="fas fa-file-code"></i>
+                            <span>Real Example</span>
+                        </div>
+                        <div class="example-content">
+                            <p><strong>Type:</strong> Ransomware (WannaCry)</p>
+                            <p><strong>Impact:</strong> 200,000+ computers infected</p>
+                            <p class="example-text">Encrypts all files and demands Bitcoin payment for decryption key.
+                            </p>
+                            <div class="red-flags">
+                                <span class="flag"><i class="fas fa-times"></i> Unexpected file encryption</span>
+                                <span class="flag"><i class="fas fa-times"></i> Ransom demand</span>
+                                <span class="flag"><i class="fas fa-times"></i> Suspicious pop-ups</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-content" id="learn-malware">
+                        <div class="learn-more-inner">
+                            <h4><i class="fas fa-book-open"></i> How to Stay Safe</h4>
+                            <ul>
+                                <li><strong>Keep antivirus updated</strong> — Use reputable software like Windows
+                                    Defender, Malwarebytes, or Bitdefender</li>
+                                <li><strong>Don't download from untrusted sources</strong> — Avoid pirated software and
+                                    sketchy websites</li>
+                                <li><strong>Disable macros in Office</strong> — Malicious macros are a common delivery
+                                    method</li>
+                                <li><strong>Regular backups</strong> — Follow the 3-2-1 rule: 3 copies, 2 media types, 1
+                                    offsite</li>
+                                <li><strong>Keep OS and software patched</strong> — WannaCry exploited a patched
+                                    vulnerability</li>
+                            </ul>
+                            <div class="safety-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span><strong>Pro Tip:</strong> If infected with ransomware, <strong>never pay</strong>
+                                    — there's no guarantee you'll get your files back.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-learn-more" data-target="learn-malware">
+                        <span class="btn-text">Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Social Engineering -->
+                <div class="threat-card" data-threat="social">
+                    <div class="threat-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Social Engineering</h3>
+                    <p>Manipulating people into breaking security procedures or giving away confidential information.
+                    </p>
+                    <div class="threat-example">
+                        <div class="example-header">
+                            <i class="fas fa-phone"></i>
+                            <span>Real Example</span>
+                        </div>
+                        <div class="example-content">
+                            <p><strong>Caller:</strong> "IT Support"</p>
+                            <p><strong>Request:</strong> "We need your password to fix the server."</p>
+                            <p class="example-text">Impersonates authority figures to pressure victims into compliance.
+                            </p>
+                            <div class="red-flags">
+                                <span class="flag"><i class="fas fa-times"></i> Requests password</span>
+                                <span class="flag"><i class="fas fa-times"></i> Unsolicited contact</span>
+                                <span class="flag"><i class="fas fa-times"></i> Authority pressure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-content" id="learn-social">
+                        <div class="learn-more-inner">
+                            <h4><i class="fas fa-book-open"></i> How to Stay Safe</h4>
+                            <ul>
+                                <li><strong>Verify identity independently</strong> — Call back using official numbers,
+                                    not ones provided by the caller</li>
+                                <li><strong>Never share credentials</strong> — No legitimate IT department asks for
+                                    passwords</li>
+                                <li><strong>Be wary of urgency</strong> — Scammers create false urgency to bypass
+                                    critical thinking</li>
+                                <li><strong>Question unexpected requests</strong> — "Why does this person need this
+                                    information?"</li>
+                                <li><strong>Report suspicious contacts</strong> — Inform your security team or relevant
+                                    authorities</li>
+                            </ul>
+                            <div class="safety-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span><strong>Pro Tip:</strong> If someone claims to be from your bank/company, hang up
+                                    and call the official number on your card or website.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-learn-more" data-target="learn-social">
+                        <span class="btn-text">Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Public Wi-Fi -->
+                <div class="threat-card" data-threat="wifi">
+                    <div class="threat-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Public Wi-Fi Attacks</h3>
+                    <p>Intercepting data transmitted over unsecured public wireless networks.</p>
+                    <div class="threat-example">
+                        <div class="example-header">
+                            <i class="fas fa-coffee"></i>
+                            <span>Real Example</span>
+                        </div>
+                        <div class="example-content">
+                            <p><strong>Network:</strong> "Starbucks_Free_WiFi" vs "Starbucks_WiFi"</p>
+                            <p><strong>Risk:</strong> Man-in-the-middle attack</p>
+                            <p class="example-text">Fake hotspot captures all data: passwords, emails, banking info.</p>
+                            <div class="red-flags">
+                                <span class="flag"><i class="fas fa-times"></i> No password required</span>
+                                <span class="flag"><i class="fas fa-times"></i> Similar network names</span>
+                                <span class="flag"><i class="fas fa-times"></i> HTTP instead of HTTPS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-content" id="learn-wifi">
+                        <div class="learn-more-inner">
+                            <h4><i class="fas fa-book-open"></i> How to Stay Safe</h4>
+                            <ul>
+                                <li><strong>Always use a VPN</strong> — Encrypts all traffic, even on public networks
+                                </li>
+                                <li><strong>Verify network names</strong> — Ask staff for the official network name</li>
+                                <li><strong>Disable auto-connect</strong> — Prevent your device from joining rogue
+                                    networks</li>
+                                <li><strong>Avoid sensitive transactions</strong> — Don't do banking on public Wi-Fi
+                                </li>
+                                <li><strong>Enable HTTPS-Only mode</strong> — Most browsers can force encrypted
+                                    connections</li>
+                            </ul>
+                            <div class="safety-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span><strong>Pro Tip:</strong> Use your phone's mobile hotspot instead of public Wi-Fi
+                                    when handling sensitive data.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-learn-more" data-target="learn-wifi">
+                        <span class="btn-text">Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Best Practices</span>
+                <h2>Essential Security Tips</h2>
+                <p>Simple habits that make a huge difference in your online safety</p>
+            </div>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <div class="tip-number">01</div>
+                    <div class="tip-content">
+                        <h3>Use Strong, Unique Passwords</h3>
+                        <p>Avoid common passwords like "123456" or "password." Use a mix of uppercase, lowercase,
+                            numbers, and symbols. Consider using a password manager.</p>
+                        <div class="tip-example-box">
+                            <div class="password-demo">
+                                <div class="pw-item weak">
+                                    <span class="pw-text">password123</span>
+                                    <span class="pw-strength">Weak <i class="fas fa-times-circle"></i></span>
+                                </div>
+                                <div class="pw-item strong">
+                                    <span class="pw-text">Xk9#mP2$vL@qR5!</span>
+                                    <span class="pw-strength">Strong <i class="fas fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">02</div>
+                    <div class="tip-content">
+                        <h3>Enable Two-Factor Authentication (2FA)</h3>
+                        <p>Add an extra layer of security. Even if someone gets your password, they can't access your
+                            account without the second factor.</p>
+                        <div class="tip-example-box">
+                            <div class="two-fa-demo">
+                                <div class="auth-step">
+                                    <i class="fas fa-key"></i>
+                                    <span>Password</span>
+                                </div>
+                                <i class="fas fa-plus"></i>
+                                <div class="auth-step">
+                                    <i class="fas fa-mobile-screen"></i>
+                                    <span>OTP Code</span>
+                                </div>
+                                <i class="fas fa-equals"></i>
+                                <div class="auth-step secure">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Secure</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">03</div>
+                    <div class="tip-content">
+                        <h3>Keep Software Updated</h3>
+                        <p>Updates often include security patches for newly discovered vulnerabilities. Enable automatic
+                            updates whenever possible.</p>
+                        <div class="tip-example-box">
+                            <div class="update-demo">
+                                <div class="update-item">
+                                    <i class="fab fa-windows"></i>
+                                    <span>OS Updates</span>
+                                    <div class="toggle-switch active">
+                                        <div class="toggle-knob"></div>
+                                    </div>
+                                </div>
+                                <div class="update-item">
+                                    <i class="fab fa-chrome"></i>
+                                    <span>Browser Updates</span>
+                                    <div class="toggle-switch active">
+                                        <div class="toggle-knob"></div>
+                                    </div>
+                                </div>
+                                <div class="update-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>App Updates</span>
+                                    <div class="toggle-switch active">
+                                        <div class="toggle-knob"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">04</div>
+                    <div class="tip-content">
+                        <h3>Verify Before You Click</h3>
+                        <p>Hover over links to see the actual URL. Check for misspellings, suspicious domains, and
+                            unexpected attachments.</p>
+                        <div class="tip-example-box">
+                            <div class="link-check-demo">
+                                <div class="link-item suspicious">
+                                    <i class="fas fa-link"></i>
+                                    <span>https://facebo0k.com/login</span>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="link-item safe">
+                                    <i class="fas fa-link"></i>
+                                    <span>https://facebook.com/login</span>
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">05</div>
+                    <div class="tip-content">
+                        <h3>Backup Your Data Regularly</h3>
+                        <p>Use the 3-2-1 rule: 3 copies of data, 2 different media types, 1 offsite/cloud backup.
+                            Protect against ransomware and hardware failure.</p>
+                        <div class="tip-example-box">
+                            <div class="backup-demo">
+                                <div class="backup-tier">
+                                    <i class="fas fa-laptop"></i>
+                                    <span>Local</span>
+                                </div>
+                                <div class="backup-tier">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>External</span>
+                                </div>
+                                <div class="backup-tier">
+                                    <i class="fas fa-cloud"></i>
+                                    <span>Cloud</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-number">06</div>
+                    <div class="tip-content">
+                        <h3>Use a VPN on Public Networks</h3>
+                        <p>Encrypt your internet connection when using public Wi-Fi. A VPN creates a secure tunnel for
+                            your data.</p>
+                        <div class="tip-example-box">
+                            <div class="vpn-demo">
+                                <div class="vpn-device">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="vpn-tunnel">
+                                    <i class="fas fa-shield-halved"></i>
+                                    <span>Encrypted Tunnel</span>
+                                </div>
+                                <div class="vpn-server">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interactive Tools</span>
+                <h2>Test Your Security</h2>
+                <p>Use these tools to check and improve your security posture</p>
+            </div>
+            <div class="tools-grid">
+                <!-- Password Strength Checker -->
+                <div class="tool-card large">
+                    <div class="tool-header">
+                        <i class="fas fa-key"></i>
+                        <h3>Password Strength Checker</h3>
+                    </div>
+                    <div class="password-checker">
+                        <div class="input-group">
+                            <input type="password" id="passwordInput" placeholder="Type a password to test...">
+                            <button id="togglePassword" class="toggle-visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="strength-meter">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <div class="strength-label" id="strengthLabel">Enter a password</div>
+                        <div class="password-criteria">
+                            <div class="criterion" id="lengthCheck">
+                                <i class="far fa-circle"></i>
+                                <span>At least 12 characters</span>
+                            </div>
+                            <div class="criterion" id="upperCheck">
+                                <i class="far fa-circle"></i>
+                                <span>Uppercase letter (A-Z)</span>
+                            </div>
+                            <div class="criterion" id="lowerCheck">
+                                <i class="far fa-circle"></i>
+                                <span>Lowercase letter (a-z)</span>
+                            </div>
+                            <div class="criterion" id="numberCheck">
+                                <i class="far fa-circle"></i>
+                                <span>Number (0-9)</span>
+                            </div>
+                            <div class="criterion" id="specialCheck">
+                                <i class="far fa-circle"></i>
+                                <span>Special character (!@#$...)</span>
+                            </div>
+                            <div class="criterion" id="commonCheck">
+                                <i class="far fa-circle"></i>
+                                <span>Not a common password</span>
+                            </div>
+                        </div>
+                        <div class="password-time" id="crackTime"></div>
+                        <div class="password-suggestions" id="passwordSuggestions"></div>
+                        <button class="btn btn-secondary btn-generate btn-interactive" id="generatePassword">
+                            <i class="fas fa-magic"></i> Generate Strong Password
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Phishing Simulator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-fish-fins"></i>
+                        <h3>Phishing Spotter</h3>
+                    </div>
+                    <div class="phishing-sim">
+                        <p class="sim-intro">Can you spot the phishing attempt?</p>
+                        <div class="email-preview" id="emailPreview">
+                            <div class="email-header">
+                                <div class="email-from">
+                                    <span class="label">From:</span>
+                                    <span id="emailFrom">noreply@amazon-security.com</span>
+                                </div>
+                                <div class="email-subject">
+                                    <span class="label">Subject:</span>
+                                    <span id="emailSubject">Your Amazon account has been locked</span>
+                                </div>
+                            </div>
+                            <div class="email-body" id="emailBody">
+                                <p>Dear Customer,</p>
+                                <p>We have detected unusual activity on your account. Your account has been temporarily
+                                    locked for security reasons.</p>
+                                <p>Please click the link below to verify your identity and restore access:</p>
+                                <p><a href="#" class="email-link">https://amazon.com-verify-account.net/secure</a></p>
+                                <p>If you do not verify within 24 hours, your account will be permanently deleted.</p>
+                                <p>Amazon Security Team</p>
+                            </div>
+                        </div>
+                        <div class="sim-buttons">
+                            <button class="sim-btn legit btn-interactive" id="btnLegit">
+                                <i class="fas fa-check"></i> Legitimate
+                            </button>
+                            <button class="sim-btn phishing btn-interactive" id="btnPhishing">
+                                <i class="fas fa-times"></i> Phishing
+                            </button>
+                        </div>
+                        <div class="sim-result" id="simResult"></div>
+                        <button class="sim-btn-next btn-interactive" id="btnNextScenario">
+                            Next Scenario <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Security Checklist -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Security Checklist</h3>
+                    </div>
+                    <div class="checklist">
+                        <div class="checklist-item" data-checked="false">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Use a password manager</span>
+                        </div>
+                        <div class="checklist-item" data-checked="false">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Enable 2FA on all accounts</span>
+                        </div>
+                        <div class="checklist-item" data-checked="false">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Update operating system</span>
+                        </div>
+                        <div class="checklist-item" data-checked="false">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Install antivirus software</span>
+                        </div>
+                        <div class="checklist-item" data-checked="false">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Backup important files</span>
+                        </div>
+                        <div class="checklist-item" data-checked="false">
+                            <div class="check-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Review privacy settings</span>
+                        </div>
+                        <div class="checklist-progress">
+                            <div class="progress-bar" id="checklistProgress"></div>
+                            <span id="checklistText">0/6 completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breach Checker -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Breach Checker</h3>
+                    </div>
+                    <div class="breach-checker">
+                        <p class="tool-desc">Check if your email has been compromised in known data breaches.</p>
+                        <div class="input-group">
+                            <input type="email" id="breachEmail" placeholder="Enter your email address...">
+                        </div>
+                        <button class="btn btn-primary btn-check btn-interactive" id="checkBreach">
+                            <i class="fas fa-search"></i> Check for Breaches
+                        </button>
+                        <div class="breach-result" id="breachResult"></div>
+                        <div class="breach-info">
+                            <p><i class="fas fa-info-circle"></i> This tool simulates a breach check. In production, it
+                                would query the Have I Been Pwned API.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Password Generator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-random"></i>
+                        <h3>Password Generator</h3>
+                    </div>
+                    <div class="password-generator">
+                        <div class="generated-password" id="generatedPassword">
+                            <span>Click generate to create a password</span>
+                            <button class="copy-btn" id="copyPassword" title="Copy to clipboard">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="generator-options">
+                            <div class="option">
+                                <label>Length: <span id="lengthValue">16</span></label>
+                                <input type="range" id="passwordLength" min="8" max="32" value="16">
+                            </div>
+                            <div class="option-checkboxes">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="includeUpper" checked>
+                                    <span class="checkmark"></span>
+                                    Uppercase (A-Z)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="includeLower" checked>
+                                    <span class="checkmark"></span>
+                                    Lowercase (a-z)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="includeNumbers" checked>
+                                    <span class="checkmark"></span>
+                                    Numbers (0-9)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="includeSpecial" checked>
+                                    <span class="checkmark"></span>
+                                    Special (!@#$)
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-interactive" id="generateNewPassword">
+                            <i class="fas fa-sync-alt"></i> Generate Password
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Test Your Knowledge</span>
+                <h2>Cybersecurity Quiz</h2>
+                <p>Challenge yourself with real-world scenarios</p>
+            </div>
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-start" id="quizStart">
+                    <div class="quiz-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Ready to test your cybersecurity knowledge?</h3>
+                    <p>10 questions based on real-world scenarios. See how security-savvy you are!</p>
+                    <div class="quiz-topics">
+                        <span class="topic-tag"><i class="fas fa-fish-fins"></i> Phishing</span>
+                        <span class="topic-tag"><i class="fas fa-key"></i> Passwords</span>
+                        <span class="topic-tag"><i class="fas fa-wifi"></i> Networks</span>
+                        <span class="topic-tag"><i class="fas fa-mobile-screen"></i> 2FA</span>
+                        <span class="topic-tag"><i class="fas fa-bug"></i> Malware</span>
+                    </div>
+                    <button class="btn btn-primary btn-large btn-interactive btn-pulse" id="startQuiz">
+                        <i class="fas fa-play"></i> Start Quiz
+                    </button>
+                </div>
+                <div class="quiz-question" id="quizQuestion" style="display: none;">
+                    <div class="question-progress">
+                        <div class="progress-fill" id="questionProgress"></div>
+                    </div>
+                    <div class="question-number" id="questionNumber">Question 1/10</div>
+                    <h3 id="questionText"></h3>
+                    <div class="answers" id="answersContainer"></div>
+                    <div class="question-explanation" id="questionExplanation"></div>
+                </div>
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <div class="result-icon" id="resultIcon"></div>
+                    <h3 id="resultTitle"></h3>
+                    <p id="resultMessage"></p>
+                    <div class="result-score" id="resultScore"></div>
+                    <div class="result-breakdown" id="resultBreakdown"></div>
+                    <button class="btn btn-primary btn-interactive" id="restartQuiz">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>CyberShield</span>
+                    </div>
+                    <p>Empowering everyone to stay safe in the digital world through education and awareness.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#threats">Common Threats</a></li>
+                        <li><a href="#tips">Security Tips</a></li>
+                        <li><a href="#tools">Interactive Tools</a></li>
+                        <li><a href="#quiz">Knowledge Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.cisa.gov" target="_blank">CISA</a></li>
+                        <li><a href="https://staysafeonline.org" target="_blank">Stay Safe Online</a></li>
+                        <li><a href="https://www.ncsc.gov.uk" target="_blank">NCSC</a></li>
+                        <li><a href="https://haveibeenpwned.com" target="_blank">Have I Been Pwned?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> CyberShield. Built for cybersecurity awareness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <div id="toastContainer"></div>
+    <div id="confettiContainer" class="confetti-container"></div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Have questions or suggestions? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>numanansari920301@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Our Mission</h4>
+                            <p>Education & Awareness Worldwide</p>
+                        </div>
+                    </div>
+                    <div class="social-links-large">
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/numanAnsari0301" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <button id="viewMessagesBtn" class="btn-secondary" style="font-size: 0.9rem; padding: 10px 15px; display: none;">
+                            <i class="fas fa-database"></i> View Message Log
+                        </button>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mykloawj" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-interactive">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>CyberShield</span>
+                    </div>
+                    <p>Empowering everyone to stay safe in the digital world through education and awareness.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#threats">Threats</a></li>
+                        <li><a href="#tips">Security Tips</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)" id="openPrivacy">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" id="openTerms">Terms & Conditions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberShield Initiative. All Rights Reserved.</p>
+                <p>Designed & Developed by Numan Ansari - <a href="mailto:numanansari920301@gmail.com" style="color: inherit; text-decoration: none; opacity: 0.8;">numanansari920301@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Privacy Policy</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Last Updated:</strong> April 25, 2026</p>
+                <h4>1. Information We Collect</h4>
+                <p>CyberShield is an educational platform. We do not store personal data entered into our interactive tools (like the Password Checker or Breach Simulator). Any data entered is processed locally in your browser.</p>
+                <h4>2. How We Use Information</h4>
+                <p>If you use our contact form, we only use your email to respond to your inquiry. We do not share your information with third parties.</p>
+                <h4>3. Cookies</h4>
+                <p>We may use essential session cookies to improve your user experience and track aggregate site analytics.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Terms & Conditions</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Last Updated:</strong> April 25, 2026</p>
+                <h4>1. Disclaimer</h4>
+                <p>The information and tools on CyberShield are for educational and awareness purposes only. While we strive for accuracy, we are not responsible for any security incidents that occur on your personal accounts.</p>
+                <h4>2. Use of Tools</h4>
+                <p>The "Breach Checker" and "Phishing Simulator" are simulations and do not connect to live production databases like "Have I Been Pwned" or actual malicious servers.</p>
+                <h4>3. Intellectual Property</h4>
+                <p>Content on this site is owned by the CyberShield Initiative unless otherwise stated.</p>
+            </div>
+        </div>
+    <!-- Message Log Modal (Simulated Database) -->
+    <div id="messagesModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3><i class="fas fa-database"></i> Sent Messages Log</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>This is your local "database" of messages sent via the contact form (stored in your browser).</p>
+                <div id="messageTableContainer" style="overflow-x: auto; margin: 20px 0;">
+                    <table style="width: 100%; border-collapse: collapse; color: var(--white); font-size: 0.9rem;">
+                        <thead style="background: rgba(255,255,255,0.05);">
+                            <tr>
+                                <th style="padding: 12px; text-align: left; border-bottom: 2px solid var(--primary);">Date</th>
+                                <th style="padding: 12px; text-align: left; border-bottom: 2px solid var(--primary);">Name</th>
+                                <th style="padding: 12px; text-align: left; border-bottom: 2px solid var(--primary);">Email</th>
+                                <th style="padding: 12px; text-align: left; border-bottom: 2px solid var(--primary);">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody id="messageTableBody">
+                            <!-- Messages will appear here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div style="display: flex; gap: 15px; margin-top: 20px;">
+                    <button id="exportExcelBtn" class="btn-primary" style="padding: 10px 20px;">
+                        <i class="fas fa-file-excel"></i> Export to Excel (CSV)
+                    </button>
+                    <button id="clearMessagesBtn" class="btn-secondary" style="padding: 10px 20px; background: rgba(239, 68, 68, 0.1); color: var(--danger); border-color: rgba(239, 68, 68, 0.2);">
+                        <i class="fas fa-trash"></i> Clear Database
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
