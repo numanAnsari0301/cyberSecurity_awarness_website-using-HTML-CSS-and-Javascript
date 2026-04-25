@@ -1,8 +1,5 @@
 # 🛡️ CyberShield - Cybersecurity Awareness Platform
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/lustrous-kangaroo-016631/deploy-status)](https://app.netlify.com/sites/lustrous-kangaroo-016631/deploys)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 **CyberShield** is a modern, premium interactive web application designed to educate users about common cybersecurity threats and provide real-world tools to improve their digital safety.
 
 ## 🔗 [Live Demo - Visit CyberShield](https://lustrous-kangaroo-016631.netlify.app/)
